@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+BE+VLG:wght@100..400&display=swap');
+
+h1{
+    font-family: 'Pacifico';
+    text-align: center;
+}
+
+.text-container{
+    border: solid;
+    width: 50%;
+    margin: auto;
+}
+
+.input-txt{
+   text-align: center;
+    margin: 50px auto;
+    display: block;
+    width: 80%;
+    height: 200px;
+    font-size: 50px;
+}
