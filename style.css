@@ -43,9 +43,11 @@ h1{
     width: 150px;
     color: aliceblue;
     background-color: darkcyan;
+    border: none;
 }
 
 .action-btn:hover{
     color: darkcyan;
     background-color: aliceblue;
+    border: solid darkcyan;
 }
