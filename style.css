@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+BE+VLG:wght@100..400&display=swap');
 
+body{
+    background-color: darkcyan;
+}
 h1{
     font-family: 'Pacifico';
     text-align: center;
+    color:aliceblue;
 }
 
 .text-container{
-    border: solid;
+    border: solid darkcyan ;
+    box-shadow: 0 0 20px;
+    border-radius: 10px;
     width: 50%;
     margin: auto;
+    background-color: aliceblue;
 }
 
 .input-txt{
@@ -18,4 +25,27 @@ h1{
     width: 80%;
     height: 200px;
     font-size: 50px;
+    border-radius: 10px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    font-size: 50px;
+}
+
+.action-btn{
+    border-radius: 50px;
+    height: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 150px;
+    color: aliceblue;
+    background-color: darkcyan;
+}
+
+.action-btn:hover{
+    color: darkcyan;
+    background-color: aliceblue;
 }
