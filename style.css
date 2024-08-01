@@ -23,9 +23,18 @@ h1{
     margin: 50px auto;
     display: block;
     width: 80%;
-    height: 200px;
-    font-size: 50px;
+    height: 120px;
+    font-size: 35px;
     border-radius: 10px;
+}
+
+.result-txt{
+    margin: 30px auto;
+    display: block;
+    width: 80%;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
 }
 
 .btn-container{
