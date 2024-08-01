@@ -13,15 +13,37 @@
     <div class="text-container">
         <input type="text" class="input-txt" id="input-text">
 
-        <p class="result-txt" id="result-text">vrser</p>
-        
+        <p class="result-txt" id="result-text"></p>
+
         <div class="btn-container">
-            <button class="action-btn">UPPERCASE</button>
-            <button class="action-btn">lowercase</button>
-            <button class="action-btn">Character Count</button>
-            <button class="action-btn">Word count</button>
+            <button class="action-btn" onclick="upperCase()">UPPERCASE</button>
+            <button class="action-btn" onclick="lowerCase()">lowercase</button>
+            <button class="action-btn" onclick="charCount()">Character Count</button>
+            <button class="action-btn" onclick="wordCount()">Word count</button>
         </div>
     </div>
+
+    <script>
+        const inputElement = document.getElementById("input-text")
+        const resultElement = document.getElementById("result-text")
+
+        function upperCase() {
+
+            resultElement.innerText = inputElement.value.toUpperCase()
+        }
+        function lowerCase() {
+          
+            resultElement.innerText = inputElement.value.toLowerCase()
+        }
+        function charCount() {
+
+            resultElement.innerText = (`No. of charcters : ${inputElement.value.length}`)
+        }
+        function wordCount() {
+       
+            resultElement.innerText = (`No. of words : ${inputElement.value.split(" ").length}`)
+        }
+    </script>
 </body>
 
 </html>
