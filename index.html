@@ -16,32 +16,37 @@
         <p class="result-txt" id="result-text"></p>
 
         <div class="btn-container">
-            <button class="action-btn" onclick="upperCase()">UPPERCASE</button>
-            <button class="action-btn" onclick="lowerCase()">lowercase</button>
-            <button class="action-btn" onclick="charCount()">Character Count</button>
-            <button class="action-btn" onclick="wordCount()">Word count</button>
+            <button class="action-btn" onclick="giveActionResult('uppercase')">UPPERCASE</button>
+            <button class="action-btn" onclick="giveActionResult('lowercase')">lowercase</button>
+            <button class="action-btn" onclick="giveActionResult('charcount')">Character Count</button>
+            <button class="action-btn" onclick="giveActionResult('wordcount')">Word Count</button>
         </div>
     </div>
 
     <script>
-        const inputElement = document.getElementById("input-text")
-        const resultElement = document.getElementById("result-text")
+        function giveActionResult(action) {
+            const inputElement = document.getElementById("input-text")
+            const resultElement = document.getElementById("result-text")
 
-        function upperCase() {
+            const inputVal = inputElement.value
 
-            resultElement.innerText = inputElement.value.toUpperCase()
-        }
-        function lowerCase() {
-          
-            resultElement.innerText = inputElement.value.toLowerCase()
-        }
-        function charCount() {
+            switch (action) {
+                case 'uppercase':
+                    resultElement.innerText = inputVal.toUpperCase()
+                    break;
+                case 'lowercase':
+                    resultElement.innerText = inputVal.toLowerCase()
+                    break;
 
-            resultElement.innerText = (`No. of charcters : ${inputElement.value.length}`)
-        }
-        function wordCount() {
-       
-            resultElement.innerText = (`No. of words : ${inputElement.value.split(" ").length}`)
+                case 'charcount':
+                    resultElement.innerText = (`No. of charcters : ${inputVal.length}`)
+                    break;
+
+                default:
+                    resultElement.innerText = (`No. of words : ${inputVal.split(" ").length}`)
+                    break;
+            }
+
         }
     </script>
 </body>
